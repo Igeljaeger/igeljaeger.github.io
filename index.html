@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://igeljaeger.neocities.org/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://igeljaeger.neocities.org/favicon.png">
+  <title>igeljaeger</title>
+</head>
+
+<body>
+  <script>
+
+    setTimeout(function () {
+      document.querySelector('#copied').style.visibility = 'visible';
+    }, 2000);
+
+    function copy(text) {
+      navigator.clipboard.writeText(text);
+
+      let el = document.querySelector('#copied');
+
+      el.classList.add("fade");
+      setTimeout(() => el.classList.remove("fade"), 2500);
+    }
+
+
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle("menu-enabled");
+    }
+  </script>
+  <div class="menu">
+    <p onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></p>
+    <a href="https://igeljaeger.neocities.org/index.html">Deutsch</a>
+    <a href="https://igeljaeger.neocities.org/en.html">English</a>
+    <a href="mailto: igeljaeger@pm.me"><button>Email</button></a>
+  </div>
+  <header>
+    <img src="assets/logo.webp" alt="Igeljaeger Logo" width="150" height="150">
+    <nav>
+      <a href="https://igeljaeger.neocities.org/index.html"><span>01.</span> Deutsch</a>
+      <a href="https://igeljaeger.neocities.org/en.html"><span>02.</span> English</a>
+      <a href="mailto: igeljaeger@pm.me"><button>Email</button></a>
+    </nav>
+    <div onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <main>
+    <section id="me">
+      <h1>Servus, mein Name ist</h1>
+      <h2>igeljäger</h2>
+      <h1></h1>
+   <p>
+        Ich bin/mag: <br>
+        - ein Alemannischer Linux-Administrator, aber ich bin auch in meiner Freizeit in Technik
+        interessiert, wenn etwas meine Aufmerksamkeit erregt<br>
+        - Wandern und lerne gerne über verschiedene Kulturen, insbesondere europäische<br>
+        - Burgen und Wälder<br>
+        - Japanische Musik<br>
+        - Anime und Videospiele<br><br>
+      </p>
+<a href="#refs">
+  <button>Soziales</button>
+</a>
+</section>
+<section id="refs">
+  <div>
+    <h2>Soziales</h2>
+    <p></p>
+  </div>
+  <ul>
+    <li>
+      <div>
+        <div>
+          <i class="fa-brands fa-discord"></i>
+          <a aria-label="Discord" target="__blank__" href="https://discordapp.com/invite/K4Y6gKC">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+        <h3>Discord</h3>
+        <p>Wir schauen Anime zusammen und spielen Monster Hunter. DNs: @igeljaeger</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div>
+          <i class="fa-brands fa-steam"></i>
+          <a aria-label="Steam" target="__blank__" href="https://steamcommunity.com/id/igeljaeger/index.html">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+        <h3>Steam</h3>
+        <p>Sieh dir an, welche Art von Spielen ich mag</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div>
+          <i class="fa-brands fa-square-lastfm"></i>
+          <a aria-label="LastFM" target="__blank__" href="https://www.last.fm/user/Igeljaeger">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+        <h3>LastFM</h3>
+        <p>Sieh dir an, welche Art von Musik ich mag</p>
+      </div>
+    </li>
+        <li>
+          <div>
+            <div>
+              <i class="fa-solid fa-list"></i>
+              <a aria-label="Anime" target="__blank__" href="https://docs.google.com/spreadsheets/d/1zDhTmLgzoJCX3XFwvPSGnvU5WGIaBzegD0xTGyHft1k/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <h3>Anime-Liste</h3>
+            <p>Tabelle mit den geschauten Zeichentricks aus Japan</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="donations">
+      <div>
+        <h2>Spenden</h2>
+        <p>Klicke um die Ethereum-Adresse zu kopieren:</p>
+        <noscript>Funktioniert nur mit aktiviertem JavaScript!</noscript>
+      </div>
+      <ul>
+<!---        <li>
+          <i onclick="copy('btc')" class="webfonts-brands webfonts-btc"></i>
+        </li>
+        <li>
+          <i onclick="copy('xmr')" class="webfonts-brands webfonts-monero"></i>
+--->        
+        <li>
+          <i onclick="copy('0x025e2A33F74B1eab9cC911708A12Ee40a0527F9a')" class="fa-brands fa-ethereum"></i>
+        </li>
+      </ul>
+      <p id="copied" class="hidden" style="visibility: visible;">Kopiert!</p>
+    </section>
+  </main>
+  <footer>
+      Copyright © 2023 igeljaeger. All rights reserved<br>
+    
+  </footer>
+
+
+
+</body></html>
