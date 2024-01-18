@@ -125,8 +125,8 @@ header > div > span {
   z-index: 1000;
   background-color: transparent;
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   padding: 20%;
@@ -179,6 +179,8 @@ header > div > span {
 
 .menu > a > button:hover {
   background-color: var(--accent);
+  color: var(--bg);
+  font-weight: bold;
 }
 
 .menu-enabled {
@@ -234,6 +236,8 @@ header > nav > a > button {
 
 header > nav > a > button:hover {
   background-color: var(--accent);
+  color: var(--bg);
+  font-weight: bold;
 }
 
 section {
@@ -277,6 +281,8 @@ section {
 
 #me > a > button:hover {
   background-color: var(--accent);
+  color: var(--bg);
+  font-weight: bold;
 }
 
 #refs {
@@ -317,7 +323,7 @@ section {
   border: 2px solid transparent;
   transition: all 400ms ease-in-out;
   box-shadow: 0 10px 30px -15px var(--shadow);
-  height: 200px;
+  height: 250px;
 }
 
 #refs > ul > li > div {
@@ -413,12 +419,10 @@ section {
 
 #donations > div > h2 {
   font-size: clamp(40px, 2vw, 80px);
-  font-size: clamp(40px, 2vw, 80px);
   text-transform: uppercase;
 }
 
 #donations > div > p {
-  font-size: var(--fz-lg);
   margin-top: 10px;
   font-size: var(--fz-md);
   font-family: var(--font-alt);
@@ -431,15 +435,15 @@ section {
   text-shadow: 2px 2px 20px var(--shadow);
 }
 
-#donations > ul > li:nth-child(1) > i:hover {
+.coin-bitcoin:hover {
   color: #f7931a;
 }
 
-#donations > ul > li:nth-child(2) > i:hover {
+.coin-monero:hover {
   color: #fa6800;
 }
 
-#donations > ul > li:nth-child(3) > i:hover {
+.coin-eth:hover {
   color: #828384;
 }
 
